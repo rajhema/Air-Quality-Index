@@ -3,8 +3,9 @@ import pandas as pd
 
 import pickle
 
+
 # load the model from disk
-loaded_model=pickle.load(open('random_forest_regression_model.pkl', 'rb'))
+loaded_model=pickle.load(open('random_forest_regression_models.pkl', 'rb'))
 app = Flask(__name__)
 
 @app.route('/')
